@@ -1,0 +1,24 @@
+package com.test;
+
+public class Test2 {
+	public static void main(String[] args) {
+		yash_mb_no();
+	}
+
+	public static void yash_mb_no() {
+		String s = "7387745895";
+		call(s);
+
+	}
+
+	public static String call(String s) {
+		char ch;
+		System.out.print("Your mobile number is: ");
+		for (int i = 0; i < s.length(); i++) {
+			ch = s.charAt(i);
+			System.out.print(ch);
+		}
+		return s;
+	}
+
+}

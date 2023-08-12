@@ -1,0 +1,8 @@
+package com.test;
+
+public interface Test1 {
+	int x = 5;
+	int y = 12;
+	void m1();
+	 
+}

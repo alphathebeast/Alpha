@@ -1,0 +1,11 @@
+package com.test;
+
+import java.util.Hashtable;
+
+public class Test3 {
+	public static void main(String[] args) {
+		Hashtable ht = new Hashtable();
+		ht.put("Yashpal", "7387745895");
+		System.out.println(ht);
+	}
+}

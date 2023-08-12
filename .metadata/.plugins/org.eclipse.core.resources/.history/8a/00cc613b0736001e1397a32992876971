@@ -1,0 +1,20 @@
+package com.test;
+
+import java.util.Iterator;
+
+public class Test2 {
+	public static void main(String[] args) {
+		String s = "73877";
+		String t = "45895";
+		int x = Integer.parseInt(s);
+		int y = Integer.parseInt(t);
+		System.out.println(x + "" + y);
+
+		String str = "7387745895";
+		char ch;
+		for (int i = 0; i < str.length(); i++) {
+			ch = str.charAt(i);
+			System.out.println(ch);
+		}
+	}
+}

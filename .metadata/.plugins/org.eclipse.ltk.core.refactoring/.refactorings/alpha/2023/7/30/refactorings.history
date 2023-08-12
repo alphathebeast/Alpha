@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;alpha&apos;&#x0D;&#x0A;- Original project: &apos;alpha&apos;&#x0D;&#x0A;- Original element: &apos;alpha/src/main/java/com.firstpackage.UIKeywords&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.firstpackage.UIKeywords" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1690571055325" subPackages="false" version="1.0"/>
+</session>

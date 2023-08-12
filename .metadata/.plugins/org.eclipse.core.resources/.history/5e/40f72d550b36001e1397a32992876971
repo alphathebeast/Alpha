@@ -1,0 +1,12 @@
+package com.test;
+
+public class Test2 {
+	public static void main(String[] args) {
+		String  s = "7387745895";
+		char ch;
+		for (int i = 0; i < s.length(); i++) {
+			ch  = s.charAt(i);
+			System.out.print(ch);
+		}
+	}
+}
