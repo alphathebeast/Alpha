@@ -1,0 +1,6 @@
+2023-Aug-12 22:01:29,520 [main] com.firstpackage.UIKeywords 
+  INFO  Chrome is launched successfully
+2023-Aug-12 22:01:37,809 [main] com.firstpackage.UIKeywords 
+  INFO  URL launched successfully: https://rtmnuresults.org
+2023-Aug-12 22:01:57,349 [main] com.firstpackage.UIKeywords 
+  INFO  Browser is closed succesfully: 

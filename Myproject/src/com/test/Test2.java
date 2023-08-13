@@ -39,5 +39,4 @@ public class Test2 {
 		}
 		return s;
 	}
-
 }
