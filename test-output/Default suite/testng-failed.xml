@@ -5,6 +5,8 @@
     <classes>
       <class name="com.firsttestcase.ResultWithMavn">
         <methods>
+          <include name="chunnuResult"/>
+          <include name="sapanaResult"/>
           <include name="tearDown"/>
           <include name="yashResult"/>
           <include name="setUp"/>
