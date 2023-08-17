@@ -21,14 +21,13 @@ public class HashSetDemo {
 		NCC.add(swastika);
 		NCC.add(niharika);
 		NCC.add(sapana);
-		
+
 		for (Student student : scholarship) {
 			System.out.println(student.name);
 		}
-		
+
 		for (Student student : NCC) {
 			System.out.println(student.name);
 		}
-
 	}
 }

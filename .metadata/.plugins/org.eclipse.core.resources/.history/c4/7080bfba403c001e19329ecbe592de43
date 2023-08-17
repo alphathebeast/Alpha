@@ -1,0 +1,13 @@
+package com.test;
+
+public class Test1 {
+	public static void main(String[] args) {
+		add(12, 45);
+	}
+
+	public static int add(int x, int y) {
+		int sum = x + y;
+		System.out.println(sum);
+		return x;
+	}
+}

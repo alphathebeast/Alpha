@@ -1,0 +1,34 @@
+package com.setdemo;
+
+import java.util.TreeSet;
+
+public class HashSetDemo {
+	public static void main(String[] args) {
+
+		Student yashpal = new Student("Yashpal", 93.56f, 5.11f);
+		Student swastika = new Student("Swastika", 85.64f, 5.07f);
+		Student sapana = new Student("Sapana", 87.23f, 5.04f);
+		Student niharika = new Student("Niharika", 71.25f, 5.03f);
+
+		TreeSet<Student> scholarship = new TreeSet<Student>(new MarksComprtr());
+		scholarship.add(yashpal);
+		scholarship.add(swastika);
+		scholarship.add(niharika);
+		scholarship.add(sapana);
+
+		TreeSet<Student> NCC = new TreeSet<Student>(new NCCComprtr());
+		NCC.add(yashpal);
+		NCC.add(swastika);
+		NCC.add(niharika);
+		NCC.add(sapana);
+		
+		for (Student student : scholarship) {
+			System.out.println(student.name);
+		}
+		
+		//for (Student student : NCC) {
+			//System.out.println(student.name);
+		//}
+
+	}
+}

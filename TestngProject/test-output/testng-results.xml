@@ -1,17 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-02T23:25:30 IST" name="Default suite" finished-at="2023-08-02T23:25:54 IST" duration-ms="24406">
+  <suite started-at="2023-08-14T22:19:46 IST" name="Suite" finished-at="2023-08-14T22:19:46 IST" duration-ms="255">
     <groups>
+      <group name="Smoke">
+        <method signature="A.m3()[pri:0, instance:com.firsttestng.A@51e69659]" name="m3" class="com.firsttestng.A"/>
+        <method signature="A.m5()[pri:0, instance:com.firsttestng.A@51e69659]" name="m5" class="com.firsttestng.A"/>
+        <method signature="B.m2()[pri:0, instance:com.firsttestng.B@48aca48b]" name="m2" class="com.firsttestng.B"/>
+        <method signature="B.m3()[pri:0, instance:com.firsttestng.B@48aca48b]" name="m3" class="com.firsttestng.B"/>
+        <method signature="C.m1()[pri:0, instance:com.firsttestng.C@13fd2ccd]" name="m1" class="com.firsttestng.C"/>
+        <method signature="C.m2()[pri:0, instance:com.firsttestng.C@13fd2ccd]" name="m2" class="com.firsttestng.C"/>
+        <method signature="C.m4()[pri:0, instance:com.firsttestng.C@13fd2ccd]" name="m4" class="com.firsttestng.C"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-08-02T23:25:30 IST" name="Default test" finished-at="2023-08-02T23:25:54 IST" duration-ms="24406">
-      <class name="com.dataprovider.MySite">
-        <test-method signature="letsTest()[pri:0, instance:com.dataprovider.MySite@6d4d66d2]" started-at="2023-08-02T23:25:30 IST" name="letsTest" finished-at="2023-08-02T23:25:54 IST" duration-ms="24280" status="PASS">
+    <test started-at="2023-08-14T22:19:46 IST" name="Test" finished-at="2023-08-14T22:19:46 IST" duration-ms="255">
+      <class name="com.firsttestng.A">
+        <test-method signature="m3()[pri:0, instance:com.firsttestng.A@51e69659]" started-at="2023-08-14T22:19:46 IST" name="m3" finished-at="2023-08-14T22:19:46 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- letsTest -->
-      </class> <!-- com.dataprovider.MySite -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- m3 -->
+        <test-method signature="m5()[pri:0, instance:com.firsttestng.A@51e69659]" started-at="2023-08-14T22:19:46 IST" name="m5" finished-at="2023-08-14T22:19:46 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m5 -->
+      </class> <!-- com.firsttestng.A -->
+      <class name="com.firsttestng.B">
+        <test-method signature="m2()[pri:0, instance:com.firsttestng.B@48aca48b]" started-at="2023-08-14T22:19:46 IST" name="m2" finished-at="2023-08-14T22:19:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method signature="m3()[pri:0, instance:com.firsttestng.B@48aca48b]" started-at="2023-08-14T22:19:46 IST" name="m3" finished-at="2023-08-14T22:19:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3 -->
+      </class> <!-- com.firsttestng.B -->
+      <class name="com.firsttestng.C">
+        <test-method signature="m1()[pri:0, instance:com.firsttestng.C@13fd2ccd]" started-at="2023-08-14T22:19:46 IST" name="m1" finished-at="2023-08-14T22:19:46 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method signature="m2()[pri:0, instance:com.firsttestng.C@13fd2ccd]" started-at="2023-08-14T22:19:46 IST" name="m2" finished-at="2023-08-14T22:19:46 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method signature="m4()[pri:0, instance:com.firsttestng.C@13fd2ccd]" started-at="2023-08-14T22:19:46 IST" name="m4" finished-at="2023-08-14T22:19:46 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+      </class> <!-- com.firsttestng.C -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

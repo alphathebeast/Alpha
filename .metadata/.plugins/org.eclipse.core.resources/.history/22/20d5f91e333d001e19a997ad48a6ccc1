@@ -1,0 +1,21 @@
+package com.firsttestcase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class MyClass {
+
+	public static void openBrowser() {
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://rtmnuresults.org");
+		driver.manage().window().maximize();
+		org.openqa.selenium.Dimension d = driver.findElement(By.cssSelector("input[type='search']")).getSize();
+		System.out.println("width is: " + d.width + "  " + "height is: " + d.height);
+	}
+
+	public static void main(String[] args) {
+		openBrowser();
+	}
+}

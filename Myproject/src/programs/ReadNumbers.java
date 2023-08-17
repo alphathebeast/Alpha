@@ -1,8 +1,13 @@
 package programs;
 
+import java.util.Scanner;
+
 public class ReadNumbers {
 	public static void main(String[] args) {
-		int x = 97;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a two digit number: ");
+		int x = scan.nextInt();
+		scan.close();
 		int y = x % 10;
 		int z = x / 10;
 		int lastDigit = y;
@@ -73,5 +78,4 @@ public class ReadNumbers {
 			break;
 		}
 	}
-
 }

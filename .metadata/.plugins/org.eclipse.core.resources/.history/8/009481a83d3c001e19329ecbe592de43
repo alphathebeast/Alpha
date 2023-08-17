@@ -1,0 +1,17 @@
+package com.test;
+
+import java.util.TreeSet;
+
+public class Test1 {
+	public static void main(String[] args) {
+
+		int[] x = { 25, 78, 96, 32, 41, 53, 22, 18 };
+		TreeSet<Integer> ts = new TreeSet<Integer>();
+
+		for (int i = 0; i < x.length; i++) {
+			ts.add(x[i]);
+		}
+		System.out.println("The elements present are: " + ts);
+		System.out.println("Second last element in the given array is: " + ts.lower(ts.last()));
+	}
+}

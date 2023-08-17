@@ -1,0 +1,13 @@
+package com.test;
+
+import java.util.Random;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+		Random r = new Random();
+		int x = r.nextInt(90000) + 10000;
+		System.out.println(x);
+	}
+}

@@ -1,0 +1,57 @@
+package com.test;
+
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String[] args) {
+		choice();
+	}
+
+	public static int add(int x, int y) {
+		int sum = x + y;
+		System.out.println("The addition of two numbers is: " + sum);
+		return sum;
+	}
+
+	public static int sub(int x, int y) {
+		int dif = x - y;
+		System.out.println("The substraction of two numbers is: " + dif);
+		return dif;
+	}
+
+	public static void choice() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Do you want to do another calculation: ");
+		System.out.println("if yes press 1");
+		System.out.println("if not press 0");
+		int ch = sc.nextInt();
+		if (ch == 1) {
+			calculations();
+		} else {
+			System.out.println("Thank you, Have a good day");
+		}
+	}
+
+	public static void calculations() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter two numbers: ");
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		System.out.println("Enter your choice:");
+		System.out.println("1. Addittion");
+		System.out.println("2. Substraction");
+		int choice = scan.nextInt();
+		switch (choice) {
+		case 1:
+			add(a, b);
+			break;
+		case 2:
+			sub(a, b);
+			break;
+
+		default:
+			break;
+		}
+		scan.close();
+	}
+}
