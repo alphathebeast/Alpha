@@ -14,7 +14,6 @@ public class ResultWithMavn extends TestBase {
 	@Test
 	public void sapanaResult() {
 		UIKeywords.enterRollNumber("972555");
-
 	}
 
 	@Test

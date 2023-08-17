@@ -40,7 +40,7 @@ public class UIKeywords {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
-		log.info(browserName + "is launched successfully");
+		log.info(browserName + " is launched successfully");
 	}
 
 	public static void launchURL(String url) {
@@ -121,7 +121,7 @@ public class UIKeywords {
 		} else if (locatorType.equalsIgnoreCase("css")) {
 			driver.findElement(By.cssSelector(locatorValue)).click();
 		} else {
-			System.err.println("Invalid locator enetered: " + locatorType);
+			log.error("Invalid locator enetered: " + locatorType);
 		}
 	}
 
@@ -134,7 +134,7 @@ public class UIKeywords {
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			System.out.println("wait for 5 secs");
+			log.info("wait for 5 secs");
 		}
 	}
 
