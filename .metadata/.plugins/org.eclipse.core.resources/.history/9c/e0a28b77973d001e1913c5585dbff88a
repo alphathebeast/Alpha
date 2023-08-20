@@ -1,0 +1,44 @@
+package com.firsttestcase;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelReading {
+	public static Object[][] load_Sheet(String fileName, String sheetName) throws IOException {
+		Object[][] obj = null;
+		Workbook book = null;
+		FileInputStream fis = new FileInputStream(fileName);
+		if (fileName.endsWith("xls")) {
+			book = new HSSFWorkbook(fis);
+		} else if (fileName.endsWith("xlsx")) {
+			book = new XSSFWorkbook(fis);
+		}
+
+		Sheet sheet = book.getSheet(sheetName);
+		int rows = sheet.getLastRowNum();
+		obj = new Object[rows][sheet.getRow(0).getLastCellNum() - 1];
+
+		for (int i = 1; i <= rows; i++) {
+			Row row = sheet.getRow(i);
+			int cells = row.getLastCellNum();
+			for (int j = 1; j < cells; j++) {
+				@SuppressWarnings("rawtypes")
+				org.apache.poi.ss.usermodel.Cell cell = row.getCell(j);
+				//obj[i - 1][j - 1] = cell.getStringCellValue();
+				System.out.print(cell.getStringCellValue()+ "\t");
+			}
+			System.out.println();
+		}
+
+		return obj;
+	}
+
+	public static void main(String[] args) throws IOException {
+		load_Sheet("E:\\jars\\StudentsData.xlsx", "Students");
+	}
+}

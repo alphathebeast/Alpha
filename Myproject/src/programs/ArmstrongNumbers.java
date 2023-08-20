@@ -14,7 +14,6 @@ public class ArmstrongNumbers {
 			System.out.println(number + " is not an Armstrong number.");
 		}
 	}
-
 	// Function to check if a number is an Armstrong number
 	public static boolean isArmstrong(int num) {
 		int originalNum = num;
@@ -26,7 +25,6 @@ public class ArmstrongNumbers {
 			sum += Math.pow(digit, numberOfDigits);
 			num /= 10;
 		}
-
 		return sum == originalNum;
 	}
 }

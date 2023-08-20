@@ -1,0 +1,37 @@
+package com.firsttestcase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class My_experiments {
+
+	@Test
+	public static void m1() {
+
+		// WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver",
+				"E:\\jars\\chrome\\New folder\\chromedriver-win32\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.myntra.com/");
+		driver.manage().window().maximize();
+
+		//WebElement w = driver.findElement(By.xpath("(//a[@data-type = 'navElements'])[1]"));
+		Actions act = new Actions(driver);
+		act.moveToElement(driver.findElement(By.xpath("(//a[@data-type = 'navElements'])[1]")));
+		act.perform();
+
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		driver.quit();
+	}
+}
